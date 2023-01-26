@@ -1,4 +1,3 @@
-
 var markersURLArray=[];
 var markersNameArray=[];
 
@@ -38,6 +37,10 @@ AFRAME.registerComponent('markers_start',{
 
      // Adding the animation to the marker
        markerEl.appendChild(animationEl);
+    }
+  }
+});
+
 AFRAME.registerComponent('registerevents', {
     init: function () {
       const marker = this.el;
@@ -49,7 +52,7 @@ AFRAME.registerComponent('registerevents', {
         var markerId = marker.id;
         console.log('Marker Lost: ', markerId);
       });
-    },
-  });
-      
+    }
+});
+
  
