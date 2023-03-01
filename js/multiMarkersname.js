@@ -31,6 +31,9 @@ AFRAME.registerComponent('markers_start',{
        animationEl.setAttribute('gltf-model', 'assets/animation' + (k+1) + '.glb');
        animationEl.setAttribute('animation', {property: 'rotation', to: '360 360 360', loop: 'repeat', dur: '5000'});
        animationEl.setAttribute('animation-mixer', '');
+       animationEl.setAttriarray.forEach(() => {
+        bute('animation', {property: 'scale', to: '3 3 3'});
+       });
       
 
      // Setting the position of the animation
