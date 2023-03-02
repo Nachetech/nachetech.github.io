@@ -29,7 +29,7 @@ AFRAME.registerComponent('markers_start',{
       
      // Setting the attributes for the animation
        animationEl.setAttribute('gltf-model', 'assets/animation' + (k+1) + '.glb');
-       animationEl.setAttribute('animation', {property: 'rotation', to: '0 0 0', loop: 'repeat', dur: '10000'});
+       animationEl.setAttribute('animation', {property: 'rotation', to: '360 360 360', loop: 'repeat', dur: '10000'});
        animationEl.setAttribute('animation', {property: 'scale', to: '3 3 3'});
        animationEl.setAttribute('animation-mixer', '');
        
