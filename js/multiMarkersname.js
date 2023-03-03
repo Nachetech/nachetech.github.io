@@ -7,14 +7,14 @@ AFRAME.registerComponent('markers_start',{
     var sceneEl = document.querySelector('a-scene');
     
     //lists of the markers
-    for(var i=1; i<5; i++)
+    for(var i=1; i<18; i++)
     {
       var url="resources/markers/pattern-Individual_Blocks-"+i+".patt";
       markersURLArray.push(url);
       markersNameArray.push('Marker_'+i);      
     }
 
-    for(var k=0; k<5; k++)
+    for(var k=0; k<18; k++)
     {
       var markerEl = document.createElement('a-marker');
       markerEl.setAttribute('type','pattern');
@@ -28,7 +28,7 @@ AFRAME.registerComponent('markers_start',{
        var animationEl = document.createElement('a-entity');
       
      // Setting the attributes for the animation
-       animationEl.setAttribute('fbx-model', 'assets/animation' + (k+1) + '.fbx');
+       animationEl.setAttribute('gltf-model', 'assets/animation' + (k+1) + '.glb');
        animationEl.setAttribute('animation', {property: 'rotation', to: '360 360 360', loop: 'repeat', dur: '5000'});
        animationEl.setAttribute('animation', {property: 'scale', to: '3 3 3'});
        animationEl.setAttribute('animation-mixer', '');
