@@ -28,7 +28,7 @@ AFRAME.registerComponent('markers_start',{
        var animationEl = document.createElement('a-entity');
       
      // Setting the attributes for the animation
-       animationEl.setAttribute('gltf-model', 'assets/animation' + (k+1) + '.glb');
+       animationEl.setAttribute('fbx-model', 'assets/animation' + (k+1) + '.fbx');
        animationEl.setAttribute('animation', {property: 'rotation', to: '360 360 360', loop: 'repeat', dur: '5000'});
        animationEl.setAttribute('animation', {property: 'scale', to: '3 3 3'});
        animationEl.setAttribute('animation-mixer', '');
